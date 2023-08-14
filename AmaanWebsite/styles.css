@@ -1,0 +1,183 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+.background-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  animation: slideshow 30s infinite ease-in-out;
+  background-repeat: no-repeat;
+  background-color: #000;
+}
+
+@keyframes slideshow {
+  0% { opacity: 1; background-image: url('images/tree2.jpg'); }
+  10% { opacity: 1; background-image: url('images/river1.jpg'); }
+  20% { opacity: 1; background-image: url('images/water.jpg'); }
+  30% { opacity: 1; background-image: url('images/mountain.jpg'); }
+  40% { opacity: 1; background-image: url('images/river3.jpg'); }
+  50% { opacity: 1; background-image: url('images/cherry.jpg'); }
+  60% { opacity: 1; background-image: url('images/orange.jpg'); }
+  70% { opacity: 1; background-image: url('images/purple.jpg'); }
+  80% { opacity: 1; background-image: url('images/beach.jpg'); }
+  90% { opacity: 1; background-image: url('images/tree1.jpg'); }
+  100% { opacity: 1; background-image: url('images/tree2.jpg'); }
+}
+
+.link {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+  color: #fff;
+}
+
+.content h1 {
+  font-size: 70px;
+  margin-bottom: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.content h2 {
+  font-size: 35px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: white;
+}
+
+.content p {
+  font-size: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.profile-pic {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.content ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.content ul li {
+  margin: 0 10px;
+  position: relative;
+}
+
+.content ul li a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+
+.content ul li a:before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #BAE1FF;
+  visibility: hidden;
+  transition: width 0.4s ease;
+}
+
+.content ul li a:hover {
+  color: #BAE1FF;
+}
+
+.content ul li a:hover:before {
+  width: 100%;
+  visibility: visible;
+}
+
+
+
+
+
+/* Common styles -#6495ED */
+/* background: linear-gradient(90deg, #6699CC 50%, #4169E1  50%); */
+  body {
+    height: 100%;
+    background: #6495ED; 
+    font-family: sans-serif;
+  }
+  
+/* Navigation bar */
+.navbar {
+  background-color: #FFFFFF;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between; /* Aligns content to both ends */
+  align-items: center;
+  height: 50px;
+  padding: 0 20px; /* Adds some padding around the content */
+}
+
+.name {
+  color: #006666;
+  margin: 0; /* Remove margin to avoid unwanted spacing */
+}
+
+.nav-links a {
+  color:  #006666;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  background-color: #BAE1FF;
+}
+
+.nav-links {
+  display: flex;
+  gap: 10px; /* Adjust the gap to control the spacing between elements */
+}
+
+
+.logo {
+  width: 40px; /* Set the desired width of the logo */
+  height: 40px; /* Set the desired height of the logo */
+  margin-right: 10px; /* Add some spacing between the logo and the name */
+}
